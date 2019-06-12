@@ -1,0 +1,8 @@
+//bottom circle
+ellipse(200, 300, 150, 150);
+
+//center circle
+ellipse(200, 184, 110, 110);
+
+//top circle
+ellipse(200, 103, 70, 70);
