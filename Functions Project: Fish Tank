@@ -1,0 +1,52 @@
+// Sky Blue Background
+background(89, 216, 255);
+
+// Stick Seaweed drawings
+noStroke();
+fill(107, 255, 99);
+rect(49, 291, 12, 108);
+rect(106, 291, 12, 108);
+rect(159, 291, 12, 108);
+rect(214, 291, 12, 108);
+rect(271, 291, 12, 108);
+rect(336, 291, 12, 108);
+
+// Function that creates the draw fish
+var drawFish = function(){
+    
+    // Variables
+    // Random Positions
+    var centerX = random(50, 350);
+    var centerY = random(50, 350);
+    
+    // Random Sizes
+    var bodyLength = random(118, 189);
+    var bodyHeight = random(65, 126);
+    
+    // Random Colour
+    var bodyColor = color(162+random(-100, 100), 0, 255+random(-100, 100));
+    
+    // Removes black outlines
+    noStroke();
+    
+    // Body Colour
+    fill(bodyColor);
+    
+    // body
+    ellipse(centerX, centerY, bodyLength, bodyHeight);
+    
+    // tail
+    var tailWidth = bodyLength/4;
+    var tailHeight = bodyHeight/2;
+    triangle(centerX-bodyLength/2, centerY, centerX-bodyLength/2-tailWidth, centerY-tailHeight, centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+    
+    // eye
+    fill(33, 33, 33);
+    ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};
+drawFish();
+drawFish();
+drawFish();
+drawFish();
+drawFish();
+drawFish();
