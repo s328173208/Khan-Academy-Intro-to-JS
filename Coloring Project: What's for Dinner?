@@ -1,0 +1,41 @@
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); // inner cirle
+
+// Pizza
+fill(255, 213, 130);
+ellipse(200, 200, 255, 255);
+
+// Tomato Sauce
+fill(247, 114, 52);
+ellipse(200, 200, 230, 230);
+
+// Cheese
+fill(255, 250, 156);
+ellipse(200, 200, 215, 215);
+
+// West - East cutting
+line(306, 200, 92, 200);
+
+// North - South cutting
+line(200, 93, 200, 307);
+
+// Celery
+fill(82, 255, 128);
+rect(209, 101, 10, 25);
+rect(128, 124, 10, 25);
+rect(174, 170, 18, 11);
+rect(107, 182, 25, 10);
+rect(267, 157, 18, 11);
+rect(162, 206, 18, 11);
+rect(227, 212, 25, 10);
+rect(205, 222, 10, 16);
+rect(132, 248, 10, 16);
+rect(276, 234, 10, 16);
+
+// Triangle Pepperoni
+fill(255, 30, 0);
+triangle(170, 158, 142, 169, 172, 109);
+triangle(263, 174, 221, 191, 231, 132);
+triangle(180, 287, 162, 235, 192, 234);
+triangle(252, 286, 272, 263, 215, 251);
