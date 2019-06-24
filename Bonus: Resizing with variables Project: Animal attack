@@ -1,11 +1,53 @@
+// Ellipse Variables
 var bodyX = 200;
 var bodyY = 220;
 var bodyW = 118;
 var bodyH = bodyW/2;
 
+// Left Eyebrow Variables
+var lineX1 = 167;
+var lineY1 = 122;
+var lineX2 = 199;
+var lineY2 = 140;
+
+// Left Eye Variables
+var triangleX1 = 194;
+var triangleY1 = 147;
+var triangleX2 = 183;
+var triangleY2 = triangleY1;
+var triangleX3 = 189;
+var triangleY3 = 140;
+
+// Mouth Variables
+var rectX = 190;
+var rectY = 155;
+var rectWIDTH = 20;
+var rectHEIGHT = 10;
+
+//Animated Object
 draw = function() {
     background(207, 254, 255);
     fill(240, 209, 36);
-    ellipse(bodyX, bodyY, bodyW, 106); // body?
-    ellipse(bodyX, bodyY-70, bodyH, 47); // face?
+    ellipse(bodyX, bodyY, bodyW, bodyW); // body?
+    ellipse(bodyX, bodyY-70, bodyH, bodyH); // face?
+    
+    //The animal gets bigger and bigger :O
+    bodyW += 1;
+    bodyH += 1;
+    
+    line(lineX1, lineY1, lineX2, lineY2); // left eyebrow
+    line(lineX1+63, lineY1, lineX2, lineY2); // right eyebrow
+    
+    fill(255, 0, 0);
+    triangle(triangleX1, triangleY1, triangleX2, triangleY2, triangleX3, triangleY3); // left eye
+    triangle(triangleX1+24, triangleY1, triangleX2+24, triangleY2, triangleX3+24, triangleY3); // right eye
+    
+    fill(0, 0, 0);
+    rect(rectX, rectY, rectWIDTH, rectHEIGHT); // mouth
+    
+    line(lineX1-63, lineY1+38, lineX2-50, lineY2+64); // left arm
+    line(lineX1+127, lineY1+35, lineX2+51, lineY2+64); // right arm
+    
+    line(lineX1-2, lineY1+198, lineX2-34, lineY2+120); // left leg
+    line(230, 320, 230, 261); // left leg
 };
