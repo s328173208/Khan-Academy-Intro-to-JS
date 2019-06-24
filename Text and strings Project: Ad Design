@@ -1,0 +1,32 @@
+fill(13, 255, 0);
+textSize(30);
+text("DUOLINGO!", 10, 30);
+textSize(13);
+text("VERY FUN! START LEARNING NEW LANGUAGES HERE!", 10, 87);
+
+// ears
+triangle(114, 130, 156, 130, 134, 102); // left ear
+triangle(220, 130, 182, 130, 200, 102); // right ear
+
+rect(96, 129, 142, 142); // body
+
+// eyes
+fill (255, 255, 255); // eyeball colour
+ellipse(135, 167, 35, 35); // left eye
+ellipse(201, 167, 35, 35); // right eye
+fill (0, 0, 0); // pupil colour
+ellipse(135, 167, 17, 17); // left eye
+ellipse(201, 167, 17, 17); // right eye
+
+// nose and mouth
+fill (255, 119, 0); // colour
+triangle(157, 212, 183, 212, 170, 189); // nose
+triangle(157, 212, 183, 212, 170, 234); // mouth
+
+// arms
+line(95, 204, 44, 180); // left arm
+line(238, 204, 288, 180); // right arm
+
+// legs
+line(144, 271, 145, 339); // left leg
+line(194, 271, 195, 339); // left leg
